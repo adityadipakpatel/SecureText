@@ -1,5 +1,5 @@
-y1 = int(input('Pass1: '))
-y2 = int(input('Pass2: '))
+y1 = input('Pass1: ')
+y2 = input('Pass2: ')
 x1, x2 = 1, 2
 
 def decrypt_func(text):
@@ -7,7 +7,9 @@ def decrypt_func(text):
     return ''.join([chr(int(text[i:i+3])) for i in range(0, len(text), 3)])
 
 #check if y1, y2 start with '0'
-is_zero = (str(y1))[0] == '0' or (str(y2))[0] == '0'
+is_zero = (input('Was there a zero at the start? (y/n): ')).lower
+
+is_zero = True if is_zero == 'y' else False
 
 #converting var to mathematical form
 m = y2-y1
