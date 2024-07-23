@@ -26,6 +26,8 @@ Make sure you have Python installed on your machine. This project uses Python 3.
 
     ```bash
     git clone https://github.com/adityadipakpatel/SecureText.git
+    ```
+    ```bash
     cd SecureText
     ```
 
@@ -33,6 +35,8 @@ Make sure you have Python installed on your machine. This project uses Python 3.
 
     ```bash
     python -m venv env
+    ```
+    ```bash
     source env/bin/activate  # On Windows use `env\Scripts\activate`
     ```
 
